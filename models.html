@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SDLC Models</title>
+</head>
+<body>
+    <h2>Accordion</h2>
+
+<button class="accordion">Waterfall</button>
+<div class="panel">
+  <p> The Waterfall approach was established in 1970. <br><br>
+      The whole process of the software development is divided into various phases of SDLC. The outcome of one phase acts as the input for the next phase. <br> <br>
+      Waterfall teams thrive in situations where you know all the requirements of the software up front. It is also an effective approach when your customers aren’t willing to commit to a heavily-involved iterative cycle. Senior management in many companies prefer waterfall-style project management because it’s structured and predictable. It’s easy to understand when and how a project will move to the next phase. Managers like this, because it makes the project’s state easy to communicate.
+
+      Overall, the best argument for waterfall comes when shipping software is expensive and needs to be correct the first time. Like with our satellite example from before, there are many areas of software where you can’t afford to learn what does and doesn’t work with failing software. Beside spacecraft, there are a variety of other examples. Software that controls engine or braking function in a car would be a bad fit for agile, or software that controls heart monitors in a hospital. Any time you need your software to be right the first time, waterfall is a good fit for your team.
+    </p>
+<img src="images/waterfall.jpg" alt="" width="250px">
+</div>
+
+<button class="accordion">Incremental</button>
+<div class="panel">
+  <p>
+     First developed in the 1950s. <br><br>
+    Essentially a series of waterfall cycles. <br><br>
+    The system is put into production when the first increment is delivered. The first increment is often a core product where the basic requirements are addressed, and supplementary features are added in the next increments. <br>
+    When to use Incremental models? <br>
+Requirements of the system are clearly understood <br>
+When demand for an early release of a product arises <br>
+When software engineering team are not very well skilled or trained <br>
+When high-risk features and goals are involved <br>
+Such methodology is more in use for web application and product based companies
+
+</p>
+<img src="images/incremental.png" alt="" width="250px">
+</div>
+
+<button class="accordion">Prototyping</button>
+<div class="panel">
+  <p> 
+    </p>
+    <img src="images/" alt="" width="250px">
+</div>
+
+<button class="accordion">V-Model</button>
+<div class="panel">
+  <p>Originates from Germany, where it was the official project management methodoloy used by the government in 1990s. <br> <br>
+      
+      <br>
+      V Model is a highly disciplined SDLC model in which there is a testing phase parallel to each development phase.
+      The V model is an extension of the waterfall model in which testing is done on each stage parallel with development in a sequential way. It is known as the Validation or Verification Model.
+      <br><br>
+      Lately, it is being adopted by the medical device industry.
+    </p>
+     <img src="images/v_model.png" alt="" width="250px">
+    
+      
+    </div>
+
+<button class="accordion">Agile Model</button>
+<div class="panel">
+  <p> Agile was formally launched in 2001 when 17 technologists drafted the Agile Manifesto. <br><br>
+      The methodology promotes continued interaction of development and testing during the SDLC process of any project. In the Agile method, the entire project is divided into small incremental builds. All of these builds are provided in iterations, and each iteration lasts from one to three weeks.
+</p>
+</div>
+
+<button class="accordion">Spiral Model</button>
+<div class="panel">
+  <p>
+     Defined by Barry Boehm in his 1988 article A Spiral Model of Software Development and Enhancement. <br><br>
+
+     Also called Meta-Model because it subsumes all the other SDLC models. For example, a single loop spiral actually represents the Iterative Waterfall Model. 
+     <br><br>
+    It is a complex and risk-driven process model. This SDLC model helps the team to adopt elements of one or more process models like a waterfall, incremental, waterfall, etc. 
+    Adopts the best features of the prototyping model and the waterfall model.
+     The spiral methodology is a combination of rapid prototyping and concurrency in design and development activities.
+    <br><br>
+    Advantages of Spiral Model: 
+Below are some advantages of the Spiral Model. 
+
+Risk Handling: The projects with many unknown risks that occur as the development proceeds, in that case, Spiral Model is the best development model to follow due to the risk analysis and risk handling at every phase.
+Good for large projects: It is recommended to use the Spiral Model in large and complex projects.
+Flexibility in Requirements: Change requests in the Requirements at later phase can be incorporated accurately by using this model.
+Customer Satisfaction: Customer can see the development of the product at the early phase of the software development and thus, they habituated with the system by using it before completion of the total product.
+Disadvantages of Spiral Model: 
+Below are some main disadvantages of the spiral model. 
+
+Complex: The Spiral Model is much more complex than other SDLC models.
+Expensive: Spiral Model is not suitable for small projects as it is expensive.
+Too much dependability on Risk Analysis: The successful completion of the project is very much dependent on Risk Analysis. Without very highly experienced experts, it is going to be a failure to develop a project using this model.
+Difficulty in time management: As the number of phases is unknown at the start of the project, so time estimation is very difficult.
+<br><br>
+    Most preferred SDLC model for long-term and high-risk projects.
+</p>
+<img src="images/spiral_model.jpg" alt="" width="250px">
+</div>
+
+<button class="accordion">Big Bang Model</button>
+<div class="panel">
+  <p>A SDLC model that starts from nothing. <br><br>
+      Simplest model as it requires no planning. <br><br>
+      Focuses on all types of resources in software development and coding, with no or very little planning. The requirements are understood and implemented when they come.
+      <br><br>
+    This model works best for small projects with smaller size development teams which are working together. It is also useful for academic software development projects. It is an ideal model where requirements are either unknown or final release date is not given.
+    </p>
+    <img src="images/bigbang.png" alt="" width="250px">
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+
+
+</html>
