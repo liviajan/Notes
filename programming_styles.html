@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Programming Styles</title>
+</head>
+<body>
+    
+
+    <h2>Programming Styles</h2>
+
+<button class="accordion">Behavior-driven development</button>
+<div class="panel">
+  <p>In software engineering, behavior-driven development is an agile software development process that encourages collaboration among developers, quality assurance testers, and customer representatives in a software project.</p>
+</div>
+
+<button class="accordion">Design-driven development</button>
+<div class="panel">
+  <p>Design driven development uses design as part of a process to learn and better define requirements in order to build better, more informed technology solutions. It can also be looked at as a process whereby design and user experience drives the development of a product or software application.</p>
+</div>
+
+<button class="accordion">Domain-driven design</button>
+<div class="panel">
+  <p>Domain-driven design is a software design approach focusing on modelling software to match a domain according to input from that domain's experts. In terms of object-oriented programming it means that the structure and language of software code should match the business domain.</p>
+</div>
+
+<button class="accordion">Secure by design</button>
+<div class="panel">
+  <p>Secure by design means that software products and capabilities have been designed to be foundationally secure.</p>
+</div>
+
+<button class="accordion">Test-driven development</button>
+<div class="panel">
+  <p>(TDD) is a software development process relying on software requirements being converted to test cases before software is fully developed, and tracking all software development by repeatedly testing the software against all test cases. This is as opposed to software being developed first and test cases created later.</p>
+</div>
+
+<button class="accordion">Acceptance test-driven development</button>
+<div class="panel">
+  <p>ATDD is closely related to test-driven development (TDD). It differs by the emphasis on developer-tester-business customer collaboration. ATDD encompasses acceptance testing, but highlights writing acceptance tests before developers begin coding.</p>
+</div>
+
+<button class="accordion">Continuous test-driven development</button>
+<div class="panel">
+  <p>Continuous test-driven development (CTDD)[1] is a software development practice that extends test-driven development (TDD) by means of automatic test execution in the background, sometimes called continuous testing. In CTDD the developer writes a test first but is not forced to execute the tests manually. The tests are run automatically by a continuous testing tool running in the background. This technique can potentially reduce the time waste resulting from manual test execution by eliminating the need for the developer to start the test after each phase of the normal TDD practice: after writing the (initially failing) test, after producing the minimal amount of code for the test to pass and after refactoring the code.</p>
+</div>
+
+<button class="accordion">Specification by example</button>
+<div class="panel">
+  <p>Specification by example (SBE) is a collaborative approach to defining requirements and business-oriented functional tests for software products based on capturing and illustrating requirements using realistic examples instead of abstract statements.</p>
+</div>
+
+<button class="accordion">Data-driven development</button>
+<div class="panel">
+  <p>Data-driven programming is a programming paradigm in which the program statements describe the data to be matched and the processing required rather than defining a sequence of steps to be taken.</p>
+</div>
+
+<button class="accordion">Data-oriented design</button>
+<div class="panel">
+  <p>Data-oriented design is a program optimization approach motivated by efficient usage of the CPU cache, used in video game development.[1] The approach is to focus on the data layout, separating and sorting fields according to when they are needed, and to think about transformations of data.</p>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
