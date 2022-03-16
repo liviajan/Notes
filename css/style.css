@@ -21,3 +21,7 @@
     background-color: white;
     overflow: hidden;
   }
+
+  span{
+    font-weight:700;
+  }
