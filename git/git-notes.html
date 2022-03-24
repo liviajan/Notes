@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        code {
+            background-color: black;
+            color: aliceblue;
+            font-size: 1rem;
+        }
+    </style>
+    <title>Git and GitHub</title>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div>
+
+        <h1>Git vs Github</h1>
+
+        <p>Git is a version control system which you can download to your computer, GitHub is a hosting & collaboration provider which hosts your Git projects. It is a web based solution allowing you to upload your Git Repositories.</p>
+
+        <h2>Useful Git Commands</h2>
+        <code>$git init</code>
+        <p>Initializes a local git repository</p>
+        <code>$git status</code>
+        <p>provides information about the current state. We have untracked files, meaning that Git is aware of the files being located in our folder but we need to explicitly tell Git to track these files (i.e. to check if the files changed) and to save any changes in a new Commit.</p>
+        <code>$git add</code>
+        <p>Tracking files either works with git add filename ("filename" should be the name of the file you want to track) or git add . which will track changes in all files inside the Repository. With git status we can see that we added a new file ("index.html" in our case) to the Repository, we didn't save any changes on the code up to this point though.</p>
+        <code>$git commit -m "your message"</code>
+        <p>As a last step we need to commit or save the current code version in our Repository. git commit -m adds the latest version of the code to our Branch, -m should provide a meaningful Commit message. In our case we could use git commit -m "added starting code".</p>
+        <code>$git log</code>
+        <p>List all Commits inside your Branch</p>
+        <code>$git checkout branch-name</code>
+        <p>Jump to the last Commit of a Branch</p>
+        <code>$git checkout commitid</code>
+        <p>Jump to a specific Commit of a Branch (commitid should be the ID of the Commit you want to checkout)</p>
+        <code>$git checkout -- .</code>
+        <p>Jump back to the last Commit and remove any untracked changes</p>
+        <code>$get reset --hard</code>
+        <p>Turn the selected Commit into the new HEAD</p>
+        <code>$git branch</code>
+        <p>List all Branches inside your Repository</p>
+        <code>$git init</code>
+        <p>Initializes a local git repository</p>
+        <code>$git checkout -b branch-name</code>
+        <p>ICreate a new Branch named branch-name</p>
+        <code>$git merge branch-name</code>
+        <p>Merge two Branches, branch-name is the Branch you merge with the Branch you're currently working in</p>
+        <code>Delete the Branch named branch-name</code>
+        <p>Delete the Branch named branch-name</p>
+    </div>
+    <hr>
+    <div>
+        <h2>Github Core Commands Overview</h2>
+        <code>git remote add origin URL</code>
+        <p>Establishes a connection between the local Git Repository you're currently working on and the remote Repository (URL should be the URL of this Repository)</p>
+        <code>git remote -v</code>
+        <p>Displays all remote Respositories your local Repository is connected to ("-v" also shows the URL of the remote Repository)</p>
+        <code>git push -u origin master</code>
+        <p>Upload code from your local Branch to a remote Branch in the remote Repository ("origin" is the name of the remote Repository, "master" the name of the remote Branch)</p>
+        <code>git clone</code>
+        <p>Copy or clone an entire remote Repository to your machine. Automatically creates a remote tracking Branch (see below)</p>
+        <code>git push</code>
+        <p>Upload code to or download code from a remote Repository. Only possible after a remote tracking Branch was created</p>
+        <code>git fetch</code>
+
+        <code>git pull</code>
+        <p>Updates the remote tracking Branch with the code from the remote Branch</p>
+        <p>"remote tracking Branch": Branch "in between" the local Branch and the remote Branch. Ensures that code is pushed or pulled between the right Repositories and Branches. Automatically created when using "git clone" or "git push"/"git pull" explicitly (i.e. with information regarding the name of the remote Repository and Branch)</p>
+        <code>git remote rm origin</code>
+        <p>Removes the connection between the local Repository and the remote Repository, "origin" is the remote Repository`s name</p>
+    </div>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
